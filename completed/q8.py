@@ -1,4 +1,3 @@
-import sys
 import operator
 
 def main():
@@ -14,7 +13,7 @@ def main():
             biggest_sum = magic_number
             biggest = reduce(operator.mul, ints)
 
-    print biggest
+    return biggest
 
 if __name__ == '__main__':
-    sys.exit(main())
+    print(main())

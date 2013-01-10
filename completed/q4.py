@@ -1,5 +1,3 @@
-import sys
-
 def main():
     """Find the largest palindrome made from the product of two 3-digit numbers."""
     greatest = 0
@@ -9,7 +7,7 @@ def main():
             if ((palindrome == palindrome[::-1]) and (j*i) > greatest):
                 greatest = j*i
 			
-    print greatest
+    return greatest
 
 if __name__ == '__main__':
-    sys.exit(main())
+    print(main())

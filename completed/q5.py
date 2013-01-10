@@ -1,4 +1,3 @@
-import sys
 from utils.math import gcd
 
 def main():
@@ -8,7 +7,7 @@ def main():
     for i in range(lcm+1, 21):
         lcm = (lcm * i) / (gcd(lcm, i))
 
-    print lcm
+    return lcm
 
 if __name__ == '__main__':
-    sys.exit(main())
+    print(main())

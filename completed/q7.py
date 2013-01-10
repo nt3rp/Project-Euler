@@ -1,5 +1,3 @@
-import sys
-
 def main():
     """What is the 10001^(st) prime number?"""
 	
@@ -18,7 +16,7 @@ def main():
         isPrime = True
         i += 1
 
-    print primes.pop()
+    return primes.pop()
 
 if __name__ == '__main__':
-    sys.exit(main())	
+    print(main())	

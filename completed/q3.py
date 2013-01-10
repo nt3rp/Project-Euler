@@ -1,6 +1,5 @@
 from math import sqrt
 from math import ceil
-import sys
 
 def main():
     """What is the largest prime factor of the number 600851475143"""
@@ -15,8 +14,7 @@ def main():
                     prime = False
                     break
             if (prime == True):
-                print i
-                quit()
+                return i
 				
 if __name__ == '__main__':
-    sys.exit(main())
+    print(main())

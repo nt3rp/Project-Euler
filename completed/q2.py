@@ -1,5 +1,3 @@
-import sys
-
 def main():
     """Find the sum of all the even-valued terms in the sequence which do not exceed four million."""
     total, a, b = 0, 1, 2
@@ -8,7 +6,7 @@ def main():
         if ((a%2) == 0):
             total += a
 
-    print total
+    return total
 
 if __name__ == '__main__':
-    sys.exit(main())
+    print(main())

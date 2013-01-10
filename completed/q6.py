@@ -1,4 +1,3 @@
-import sys
 import math
 
 def main():
@@ -6,7 +5,7 @@ def main():
     range_generator = xrange(101)
     square_of_sum  = math.pow(sum(range_generator), 2)
     sum_of_squares = sum((math.pow(x,2) for x in range_generator))
-    print (square_of_sum - sum_of_squares)
+    return (square_of_sum - sum_of_squares)
 
 if __name__ == '__main__':
-    sys.exit(main())
+    print(main())
